@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -14,22 +15,38 @@
 <body>
     <div class="project">
         <!-- Nav Bar Sticky-Top-->
-        <nav class="navbar sticky-top bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#" target="_blank" id="stick-top">
+        <div id="sticky-nav">
+            <nav class="navbar sticky-top bg-secondary" >
+                <div class="container-fluid" style="padding: 20px;">
+                <a class="navbar-brand" href="#" target="_blank"  id="stick-top">
                 FREE SHIPPING ON ORDERS OVER 50$</a>
-            </div>
-        </nav>
+                </div>
+            </nav>
+        </div>
         <!-- nav bar (Menu) -->
         <div id="nav-menu">
-            <nav>
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </nav>
+            <ul class="nav justify-content-center fixed">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SHOPALL</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FORBODY</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FORHOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+
+                <form class="nosubmit" >
+                    <input type="search" placeholder="Search...">
+                    <button class="nosubmit" type="search">Search</button>
+                </form>
+            </ul>
               
         </div>
 
