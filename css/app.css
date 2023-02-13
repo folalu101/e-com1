@@ -28,14 +28,16 @@ body {
     }
   }
   
-
+/* move nav text to center */
 #sticky-nav {
     position: relative;
     /* margin: 15px 10px; */
 }
+/* style link hover when mouse move over */
 #sticky-nav a:hover {
     color: rgb(197, 116, 184);
   }
+  /* style link on sticky top */
   #sticky-nav a {
     float: right;
     color: #f2f2f2;
@@ -44,48 +46,46 @@ body {
     
     /* text-decoration: none; */
     font-size: 20px;
-  }
-  #sticky-nav a {
     float: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  /* media query for sticky top nav */
 @media screen and (max-width: 600px) {
     #sticky-nav a, #sticky-nav {
       float: none;
       display: block;
     }
 }
-
+/* style menu bar */
 #nav-menu {
     background-color: rgb(250, 247, 247);
     justify-content: space-between;
     padding: 5px;
-    
   }
-  
+  /* style Ul of menu bar */
   #nav-menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
     justify-content: center;
   }
-  
+  /* style menu bar links....each page link */
   #nav-menu a {
     color: black;
     display: block;
     padding: 20px;
     text-decoration: none;
   }
-  
+  /* mediaquery of menu links */
   @media (max-width: 600px) {
     #nav-menu ul {
       flex-direction: column;
     }
   }
-
+/* style seach box on menu bar */
   form {
     color: #555;
     display: flex;
