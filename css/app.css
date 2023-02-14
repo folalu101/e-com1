@@ -313,3 +313,17 @@ form.nosubmit {
   background-image: url(../img/background.jpg);
   object-fit: cover;
  }
+
+ /* style icon */
+i {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 2px none black;
+  /* border-radius: 50%; */
+  text-align: center;
+  padding: 25px;
+  /* font-size: 50px; */
+  line-height: 60px;
+  color: black;
+}
