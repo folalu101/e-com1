@@ -3,7 +3,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: hidden;  /*  To stop the page from scrolling horizontally */
   }
   
 /* media query */
@@ -201,8 +201,8 @@ form.nosubmit {
     margin: 15% auto; /* 15% from the top and centered */
     padding: 40px;
     border: 1px solid #888;
-    width: 90%; /* Could be more or less, depending on screen size */
-    flex-direction: row;
+    width: 50%; /* Could be more or less, depending on screen size */
+    flex-direction: column;
   }
   
   /* Close Button */
@@ -266,7 +266,7 @@ form.nosubmit {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
   .modal-content {
-    width: 80%;
+    width: auto;
     display: block;
     flex-direction: column;
   }
@@ -275,7 +275,7 @@ form.nosubmit {
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
   .modal-content {
-    width: 80%;
+    width: auto;
     display: block;
     flex-direction: column;
   }
@@ -284,7 +284,7 @@ form.nosubmit {
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   .modal-content {
-    width: 80%;
+    width: auto;
     display: block;
     flex-direction: column;
   }
@@ -293,7 +293,7 @@ form.nosubmit {
  /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
   .modal-content {
-    width: 80%;
+    width: auto;
     display: block;
     flex-direction: column;
   }
@@ -302,8 +302,14 @@ form.nosubmit {
  /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) { 
   .modal-content {
-    width: 80%;
+    width: auto;
     display: block;
     flex-direction: column;
   }
+ }
+
+ /* Image background section styling */
+ #image-back {
+  background-image: url(../img/background.jpg);
+  object-fit: cover;
  }
