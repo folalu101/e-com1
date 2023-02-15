@@ -356,7 +356,7 @@ i {
   }
 
   /* image overflow styling */
-  .under {
+  .under-image {
     /* position: absolute;
     left: 0px;
     top: 0px; */
@@ -365,7 +365,7 @@ i {
     float: right;
   }
   
-  .over {
+  .over-image {
     position: absolute;
     float: right;
     left: 40px;
@@ -381,3 +381,36 @@ i {
     font-weight: 450;
     line-height: 15px;
   }
+  #soap-img {
+    position: relative;
+    /* left: 0px;
+    top: 0px; */
+    z-index: -1;
+    float: center;
+    text-align: center;
+    left: 350px;
+  
+  }
+  
+  #image-butt {
+    position: absolute;
+    float: center;
+    /* left: 40px;
+    top: 10px; */
+    z-index: 4;
+    padding-top: 10px;
+    bottom: -1220px;
+    right: 510px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  #image-butt:hover{
+    background-color: #555;
+    color: white;
+  }
+  #image-text {
+    shape-outside: url(../img/image-text.jpg);
+    shape-margin: 1.5rem;
+    float: left;
+  }
+  
