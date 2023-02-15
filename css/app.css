@@ -157,10 +157,17 @@ form.nosubmit {
   .carousel-item {
     width: 100%;
     height: auto;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  .carousel-item.active {
+    opacity: 1;
   }
   .carousel-inner {
     width: 100%;
-    max-height: 350px; /* adjust as needed */
+    max-height: 400px; /* adjust as needed */
+    /* position: relative; */
+    overflow: hidden;
   }
   .carousel img {
     width: 100%;
@@ -193,7 +200,7 @@ form.nosubmit {
 
   }
 
-  /* #openModal a {
+  #openModal a {
     color: black;
     display: block;
     padding: 20px;
@@ -202,7 +209,7 @@ form.nosubmit {
   #openModal a:hover{
       background-color: black;
       color: white;
-  } */
+  }
   .modal-boxing a:hover{
     background-color: black;
       color: white;
@@ -215,8 +222,14 @@ form.nosubmit {
     padding: 40px;
     border: 1px solid #888;
     width: 50%; /* Could be more or less, depending on screen size */
+    /* flex-direction: row;
+    text-align: center; */
+  }
+
+  #store-form {
+    text-align: center;
+    width: 50%;
     flex-direction: column;
-    
   }
   
   /* Close Button */
@@ -234,48 +247,7 @@ form.nosubmit {
     cursor: pointer;
   }
   
-  /* Responsive Styles */
-  /* @media  only screen and (max-width: 600px) {
-    .modal-content {
-      display: block;
-      flex-direction: row;
-    }
-  } */
-  /* @media only screen and (max-width: 600px) {
-    .modal-content {
-      width: 100%;
-      display: block;
-    }
-  } */
-  /* For mobile devices with a maximum width of 767px */
-/* @media (max-width: 767px) {
-  .modal-content {
-    /* CSS styles for the modal box on small screens */
-    /* display: block;
-      flex-direction: column;
-  } */
-/* } */ 
-
-/* For tablet devices with a minimum width of 768px and maximum width of 1023px */
-/* @media (min-width: 768px) and (max-width: 1023px) {
-  .modal-content {
-    /* CSS styles for the modal box on medium-sized screens */
-    /* display: block;
-      flex-direction: column;
-  } */
-/* } */ 
-
-/* For desktop devices with a minimum width of 1024px */
-/* @media (min-width: 1024px) {
-  .modal-content {
-    /* CSS styles for the modal box on large screens */
-    /* display: block;
-      flex-direction: column;
-  }
-} */ 
-/* bootstrap media query */
- /* X-Small devices (portrait phones, less than 576px) */
- /* No media query for `xs` since this is the default in Bootstrap */
+  
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
