@@ -153,6 +153,20 @@ form.nosubmit {
     background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
   }
 
+  /* carousel styling */
+  .carousel-item {
+    width: 100%;
+    height: auto;
+  }
+  .carousel-inner {
+    width: 100%;
+    max-height: 350px; /* adjust as needed */
+  }
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+
   /* modal box styling */
   .modal {
     display: none; /* Hidden by default */
@@ -162,7 +176,6 @@ form.nosubmit {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
     background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
     padding: 10px;
   }
@@ -203,6 +216,7 @@ form.nosubmit {
     border: 1px solid #888;
     width: 50%; /* Could be more or less, depending on screen size */
     flex-direction: column;
+    
   }
   
   /* Close Button */
@@ -310,7 +324,7 @@ form.nosubmit {
 
  /* Image background section styling */
  #image-back {
-  background-image: url(../img/background.jpg);
+  background-image: url(../img/background2.jpg);
   object-fit: cover;
  }
 
@@ -327,3 +341,36 @@ i {
   line-height: 60px;
   color: black;
 }
+/* style image and text */
+#image-back {
+  margin: 0;
+  position: relative;
+  padding: 5px;
+}
+
+.first-text {
+  position: absolute;
+  top: 17px;
+  right: 50px;
+  padding-right: 250px;
+  line-height: normal;
+}
+.second-text {
+  position: absolute;
+  bottom: 95px;
+  right: 10px;
+  padding-right: 350px;
+}
+#shop-now{
+  position: absolute;
+  float: right;
+  right: 530px;
+  bottom: 1px;
+  padding: 13px;
+}
+#shop-now:hover,
+  #shop-now:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
